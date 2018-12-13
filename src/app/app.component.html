@@ -10,5 +10,5 @@
   </mat-error>
   {{myForm.get('name').errors | json}}
   <br>
-  <button>Enviar</button>
+  <button type="submit" [disabled]="myForm.invalid">Enviar</button>
 </form>
